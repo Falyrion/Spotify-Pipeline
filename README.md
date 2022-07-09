@@ -3,11 +3,15 @@
 The goal of this project is to design and build a data ETL pipeline, extracting and transforming data from the Spotify 
 API and loading it into a data warehouse hosted on IBM Cloud. The whole process will be automated using Apache Airflow.
 
-> **Disclaimer**: This is meant as a personal learning project. This whole project could be set up by just scheduling a simple
-> python file with crontab and loading the data into a SQLite-Database. But where is the fun in that? I wanted to include
-> as many technologies as possible and deepen my knowledge with them.
+Data that will be extracted are songs played, artists and the timestamp. With this data, there can be built some charts 
+about the listening behaviour of the tracked user. This data analysis part is not yet included in the project but might 
+be added later on.
 
-Following picture illustrates the components of the pipeline as well as the flow of data.
+> **Disclaimer**: This is meant as a personal learning project. This project could be set up by just scheduling a simple
+> python file with crontab and loading the data into an SQLite-Database. But where is the fun in that? I wanted to include
+> as many technologies as possible and deepen my knowledge of them.
+
+The following picture illustrates the pipeline's components and the flow of data.
 
 ![](images/pipeline_schema.png "Schema")
 
@@ -17,7 +21,7 @@ Set a checkmark at the option <b>user-read-recently-played</b>.
 
 # Create an IBM DB2 database instance on IBM Cloud
 Design and create <b>IBM DB2</b> database on <b>IBM Cloud</b>. It might be useful to create a star schema data warehouse 
-and split the data across multiple tables. But for simplicity we will just create one table to hold all data. The table
+and split the data across multiple tables. But for simplicity, we will create one table to hold all data. The table
 can be created with the following statement:
 
 ```sql
@@ -41,7 +45,7 @@ All the functionalities for the ETL process of the pipeline will be contained in
 The python file can be found [here](dags/spotify_pipeline/spotify_pipeline_functions.py) in this repository.
 
 # Create a DAG for Airflow
-Next create an Airflow DAG to import and run the python file.
+Next, create an Airflow DAG to import and run the python file.
 
 ```python
 from airflow import DAG
@@ -64,5 +68,5 @@ with DAG(
 
 # Run Airflow server with Docker Compose 
 The last step is to run the Airflow server. I used a docker container on a local Windows machine to test the functionality.
-A guide of how to set up Docker Compose to run Airflow can be found on the [Airflow Docs](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html).
-I then set up an Airflow server on a remote linux server (Ubuntu 20.04.4).
+A guide on how to set up Docker Compose to run Airflow can be found on the [Airflow Docs](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html).
+I then set up an Airflow server on a remote Linux server (Ubuntu 20.04.4).

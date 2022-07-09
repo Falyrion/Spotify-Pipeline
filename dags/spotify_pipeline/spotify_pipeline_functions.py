@@ -127,7 +127,7 @@ def spotify_pipeline():
 
     :return: None
     """
-    # Declare constant variables
+    # Declare token
     # -> Token can be generated here: https://developer.spotify.com/console/get-recently-played/
     token = ""  # Enter token here
 

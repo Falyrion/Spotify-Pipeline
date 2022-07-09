@@ -6,11 +6,12 @@ API and loading it into a data warehouse hosted on IBM Cloud. The whole process 
 Data that will be extracted are songs played, artists and the timestamp. With this data, there can be built some charts 
 about the listening behaviour of the tracked user. This data analysis part is not yet included in the project but might 
 be added later on.
-
+<br></br>
 > **Disclaimer**: This is meant as a personal learning project. This project could be set up by just scheduling a simple
 > python file with crontab and loading the data into an SQLite-Database. But where is the fun in that? I wanted to include
 > as many technologies as possible and deepen my knowledge of them.
 
+<br></br>
 The following picture illustrates the pipeline's components and the flow of data.
 
 ![](images/pipeline_schema.png "Schema")

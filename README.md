@@ -7,7 +7,7 @@ API and loading it into a data warehouse hosted on IBM Cloud. The whole process 
 > python file with crontab and loading the data into a SQLite-Database. But where is the fun in that? I wanted to include
 > as many technologies as possible and deepen my knowledge with them.
 
-Following picture illustrate the components of the pipeline as well as the flow of data.
+Following picture illustrates the components of the pipeline as well as the flow of data.
 
 ![](images/pipeline_schema.png "Schema")
 

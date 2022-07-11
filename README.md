@@ -1,5 +1,20 @@
 # Spotify ETL Pipeline
 
+<p align="left">
+    <!-- Python -->
+    <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" alt="python"/></a>
+    <!-- Spotify API -->
+    <a href="https://developer.spotify.com/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Spotify%20API-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="spotify-api"/></a>
+    <!-- Airflow -->
+    <a href="https://airflow.apache.org/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Apache%20Airflow-017cee?style=for-the-badge&logo=apache-airflow&logoColor=white" alt="airflow"/></a>
+    <!-- Docker -->
+    <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white" alt="docker"/></a>
+    <!-- IBM DB2 -->
+    <a href="https://www.ibm.com/products/db2-database" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/IBM%20DB2-0530ad?style=for-the-badge&logo=ibm&logoColor=white" alt="db2"/></a>
+
+</p>
+
+
 The goal of this project is to design and build a data ETL pipeline, extracting and transforming data from the Spotify 
 API and loading it into a data warehouse hosted on IBM Cloud. The whole process will be automated using Apache Airflow.
 

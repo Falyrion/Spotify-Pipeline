@@ -14,7 +14,7 @@ be added later on.
 <br></br>
 The following picture illustrates the pipeline's components and the flow of data.
 
-![](images/pipeline_schema.png "Schema")
+![](images/pipeline.png "Schema")
 
 # Prerequisites
 Log in with the account to track and get a token from [https://developer.spotify.com/console/get-recently-played/](https://developer.spotify.com/console/get-recently-played/). 
